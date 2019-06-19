@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/jj"
+    tools:context=".Staff_list_display_Activity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/MEMBERS_LIST"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="396dp"
+        android:layout_height="537dp"
+        android:background="@android:color/transparent">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonStaffBack"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="@string/Back" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

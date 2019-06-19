@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abc.testapp1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/arogyalogonew"
+        android:label="Arogya Hospitals"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Staff_List_Main_Activity" />
+        <activity android:name=".DrugsMain" />
+        <activity android:name=".MainPatientActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".loginMain"
+            android:label="Arogya Hospitals"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListActivity" android:parentActivityName=".DocActivity"></activity>
+        <activity android:name=".DocAddActivity" android:parentActivityName=".DocActivity"></activity>
+        <activity android:name=".DocEditActivity" android:parentActivityName=".ListActivity"></activity>
+        <activity android:name=".DocActivity" android:parentActivityName=".MainActivity"></activity>
+
+        <activity android:name=".Patient_Add_Activity" android:parentActivityName=".MainPatientActivity"> </activity>
+        <activity android:name=".Patient_Edit_Activity" android:parentActivityName=".Patient_View_Activity"> </activity>
+        <activity android:name=".Patient_View_Activity" android:parentActivityName=".MainPatientActivity"> </activity>
+
+        <activity android:name=".DrugsView" android:parentActivityName=".DrugsMain"></activity>
+        <activity android:name=".DrugsInsert" android:parentActivityName=".DrugsMain"></activity>
+        <activity android:name=".DrugsUpdateRemove" android:parentActivityName=".DrugsMain"></activity>
+
+        <activity android:name=".Staff_Update_Activity" android:parentActivityName=".Staff_list_display_Activity"></activity>
+        <activity android:name=".Staff_Add_Activity" android:parentActivityName=".Staff_List_Main_Activity"></activity>
+        <activity android:name=".Staff_list_display_Activity" android:parentActivityName=".Staff_List_Main_Activity"></activity>
+    </application>
+
+</manifest>
